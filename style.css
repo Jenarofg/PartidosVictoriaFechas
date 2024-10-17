@@ -2,46 +2,66 @@ body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
-    
     margin: 0;
     background-color: #f0f0f0;
+    align-items: center;
 }
-.form-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.form-container input[type="date"], .form-container button {
+form {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 0 20px rgba(100, 99, 99, 0.1);
+    border-radius: 12px;
+  }
+.general {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
     width: 350px;
-    padding: 20px 0px  ;
+    box-shadow: 0 0 20px rgba(99, 99, 99, 0.1);
+    display:block;
     margin: 10px;
-    border: 1px solid #777777;
-    border-radius: 5px;
     text-align: center;
+    border: 2px solid #aeaeae;
     font-size: 20px;
 }
-.form-container button {
-    background-color: #007BFF;
-    color: #ffffff;
+button {
+    background-color: #4a80ba;
+    color: white;
     border: none;
+    width: 250px;
+    padding: 15px 10px;
     cursor: pointer;
+    margin: 5px; 
     font-size: 16px;
+    text-align: center;
 }
 
-.form-container button:hover {
-    background-color: #0056b3;
+.botones button:hover {
+    background-color: #124d8b;
+    font-size: 20px;
+    border-style: double;
 }
 
-#botonenviar {
-    font-size: 25px;
-    font-weight: 500;
-    background-color: brown;
+.datos {
+
+    align-items: center;
 }
+
+input[type="date"] {
+    margin: 5px ;
+    padding: 10px;
+    width: 200px; /* Ajusta según necesites */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 16px;
+  }
+
 #fechainicio {
     display: none;
 }
@@ -52,11 +72,11 @@ img {
     width: 90px;
     display: flex;
     justify-content: center;
-    padding: 10px 150px;
+    padding: 10px 135px;
 }
 p {
     display: flex;
     text-decoration: solid;
-    justify-content: center; 
+    justify-content:center; 
     font-size: x-large;
 }

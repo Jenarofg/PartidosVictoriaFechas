@@ -1,7 +1,7 @@
 
     function mostrarCalendario() {
-        document.getElementById('fechainicio').style.display = 'block';
-        document.getElementById('fechafin').style.display = 'block';
+        document.getElementById('fechainicio').style.display = 'flex';
+        document.getElementById('fechafin').style.display = 'flex';
     }
 
     function mostrarFecha() {
