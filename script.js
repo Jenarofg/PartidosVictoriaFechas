@@ -4,8 +4,19 @@
         document.getElementById('fechafin').style.display = 'flex';
     }
 
+
     function mostrarFecha() {
-        let desde1 = document.getElementById('fechainicio').value;
+        //console.time('revision')
+        //let fecha=moment();
+        
+        const fechaActual = new Date();
+
+        const dia = fechaActual.getDate();
+        const mes = fechaActual.getMonth() + 1; // Los meses empiezan en 0, así que sumamos 1
+        const anio = fechaActual.getFullYear();
+
+        const desde1 = `${anio}-${mes}-${dia}`;
+        //let desde1 = document.getElementById('fechainicio').value;
         let partesFecha = desde1.split("-");
         let desde = `${partesFecha[2]}-${partesFecha[1]}-${partesFecha[0]}`;
         let hasta1 = document.getElementById('fechafin').value;
